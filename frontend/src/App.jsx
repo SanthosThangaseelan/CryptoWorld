@@ -2,8 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import Lesson from './pages/Lesson';
-import Login from './pages/Login';
-import ProtectedRoute from './components/ProtectedRoute';
+import CryptoBasics from './pages/CryptoBasics';
 import TryAES from './pages/TryAES';
 import TryDES from './pages/tryDES';
 import TryHashing from './pages/TryHashing';
@@ -13,6 +12,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/crypto-basics" element={<CryptoBasics />} />
       <Route path="/lesson/:topic" element={
         <Lesson />
       } />

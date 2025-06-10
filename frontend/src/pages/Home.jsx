@@ -11,12 +11,19 @@ function Home() {
                 Practice AES, DES, Hashing, Digital Signatures and more.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center mb-10">
+            <div className="flex flex-wrap gap-5 justify-center mb-10 w-3xl">
                 <button
                     onClick={() => navigate("/lesson/aes")}
                     className="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-xl text-lg shadow">
-                    📖 Start Learning AES
+                    📖Some Quizz
                 </button>
+                <button
+                    onClick={() => navigate("/crypto-basics")}
+                    className="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-xl text-lg shadow">
+                
+                    📘 Cryptography Explained
+                </button>
+
 
                 <button
                     onClick={() => navigate("/try-aes")}
@@ -61,7 +68,7 @@ function Home() {
             </div>
 
             <footer className="mt-16 text-gray-400 text-sm text-center">
-                Built with 🛡️ love by <strong>Santhosh</strong> 
+                Built with 🛡️ love by <strong>Santhosh</strong>
             </footer>
         </div>
     );
